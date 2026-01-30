@@ -15,6 +15,7 @@ class Api{
      const response = await this.apiContext.post(apiData.url, {
      data : body
      })
+     
      expect(response.ok()).toBeTruthy();
      const loginResponseBody =await response.json();
      const token = loginResponseBody.token;
